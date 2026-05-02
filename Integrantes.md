@@ -1,3 +1,3 @@
 Maria Romero
 Jesus Perez 
-Josse Rodriguez Color
+Jose Rodriguez Color
