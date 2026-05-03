@@ -3,4 +3,4 @@ Jesus Perez
 Jose Rodriguez
 Eslaimer Peña
 Diego Benedetti
-Oswald Martinezz Escalante
+Oswald Martinez
