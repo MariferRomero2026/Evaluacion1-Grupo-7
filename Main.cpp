@@ -54,6 +54,8 @@ int main() {
                 cout << "\n--- Colaboradores del Grupo 7 ---\n";
                 cout << " Jesus Perez C.I: 30.754.920\n";
                 cout << " Jose Rodriguez C.I: 30.165.636\n";
+                cout << " Maria Romero C.I: 31.294.139\n";
+                cout << " Eslaimer Peña C.I: 31.546.912\n";
                 
                 break;
 
