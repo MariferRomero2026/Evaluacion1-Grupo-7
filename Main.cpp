@@ -1,11 +1,14 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
+#include <cctype>
+#include <limits>
 using namespace std;
 
 int main() {
     string nombre;
-    int opcion;
-    char tomoAgua;
+    int opcion = 0;
+    string tomoAgua;
     float peso;
 
     cout << "---------Bienvenido al programa del Grupo 7----------\n";
@@ -15,8 +18,9 @@ int main() {
 
     cout << "\nHola " << nombre << ", ya tomaste la cantidad de agua necesaria hoy? (si o no): ";
     cin >> tomoAgua;
+    for (char &c : tomoAgua) c = tolower(static_cast<unsigned char>(c));
 
-    if (tomoAgua == 'si' || tomoAgua == 'Si'|| tomoAgua == 'sI' || tomoAgua == 'SI'|| tomoAgua == 'S'|| tomoAgua == 's') {
+    if (tomoAgua == "si" || tomoAgua == "s") {
         cout << "\nExcelente! Me alegra que este hidratado.\n";
     } else {
         cout << "\nNo se preocupe, aqui tienes la formula recomendada:\n";
@@ -34,7 +38,12 @@ int main() {
         cout << "2. Colaboradores del programa\n";
         cout << "3. Salir\n";
         cout << "Selecciona una opcion: ";
-        cin >> opcion;
+        if (!(cin >> opcion)) {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Entrada invalida.\n";
+            opcion = 0;
+        }
 
         switch(opcion) {
             case 1:
@@ -45,6 +54,7 @@ int main() {
                 cout << "\n--- Colaboradores del Grupo 7 ---\n";
                 cout << " Jesus Perez C.I: 30.754.920\n";
                 cout << " Jose Rodriguez C.I: 30.165.636\n";
+                
                 break;
 
             case 3:
