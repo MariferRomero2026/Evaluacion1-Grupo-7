@@ -56,6 +56,7 @@ int main() {
                 cout << " Jose Rodriguez C.I: 30.165.636\n";
                 cout << " Maria Romero C.I: 31.294.139\n";
                 cout << " Eslaimer Peña C.I: 31.546.912\n";
+                cout << " Diego Benedetti C.I: 30.956.790\n";
                 
                 break;
 
