@@ -44,11 +44,7 @@ int main() {
             case 2:
                 cout << "\n--- Colaboradores del Grupo 7 ---\n";
                 cout << " Jesus Perez C.I: 30.754.920\n";
-                cout << " Luis\n";
-                cout << " Carlos\n";
-                cout << " Maria\n";
-                cout << " Jesús\n";
-                cout << " Jesús\n";
+                cout << " Jose Rodriguez C.I: 30.165.636\n";
                 break;
 
             case 3:
